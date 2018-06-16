@@ -28,21 +28,38 @@ uwb4 = UWB(-500,5500)
 
 train_file = open('data.txt','w')
 kobuki = Robot(0, 0)
+for j in range(30):
+    for i in range(500):
+        kobuki.setPose(10,0)
+        dist1 = uwb1.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist2 = uwb2.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist3 = uwb3.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist4 = uwb4.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        train_file.write(str(dist1)+' '+str(dist2)+' '+str(dist3)+' '+str(dist4)+' '+ str(kobuki.pose_x)+' ' + str(kobuki.pose_y)+' \n')
+    for i in range(500):
+        kobuki.setPose(0,10)
+        dist1 = uwb1.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist2 = uwb2.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist3 = uwb3.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist4 = uwb4.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        train_file.write(str(dist1)+' '+str(dist2)+' '+str(dist3)+' '+str(dist4)+' '+ str(kobuki.pose_x)+' ' + str(kobuki.pose_y)+' \n')
+    for i in range(500):
+        kobuki.setPose(-10,0)
+        dist1 = uwb1.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist2 = uwb2.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist3 = uwb3.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist4 = uwb4.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        train_file.write(str(dist1)+' '+str(dist2)+' '+str(dist3)+' '+str(dist4)+' '+ str(kobuki.pose_x)+' ' + str(kobuki.pose_y)+' \n')
+    for i in range(500):
+        kobuki.setPose(0,-10)
+        dist1 = uwb1.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist2 = uwb2.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist3 = uwb3.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        dist4 = uwb4.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
+        train_file.write(str(dist1)+' '+str(dist2)+' '+str(dist3)+' '+str(dist4)+' '+ str(kobuki.pose_x)+' ' + str(kobuki.pose_y)+' \n')
 
-for i in range(500):
 
-    kobuki.setPose(10,0)
 
-    # dist1 = uwb1.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
-    # dist2 = uwb2.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
-    # dist3 = uwb3.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
-    # dist4 = uwb4.getDistancewNoise(kobuki.getPose()[0], kobuki.getPose()[1])
-    dist1 = uwb1.getDistance(kobuki.getPose()[0], kobuki.getPose()[1])
-    dist2 = uwb2.getDistance(kobuki.getPose()[0], kobuki.getPose()[1])
-    dist3 = uwb3.getDistance(kobuki.getPose()[0], kobuki.getPose()[1])
-    dist4 = uwb4.getDistance(kobuki.getPose()[0], kobuki.getPose()[1])
-    train_file.write(str(dist1)+' '+str(dist2)+' '+str(dist3)+' '+str(dist4)+' '+ str(kobuki.pose_x)+' ' + str(kobuki.pose_y)+'\n')
-    train_file.write(str(dist1)+' '+str(dist2)+' '+str(dist3)+' '+str(dist4)+' '+ str(kobuki.pose_x)+' ' + str(kobuki.pose_y)+'\n')
 
 print(kobuki.getPose())
 print (uwb1.getDistance(0,0))
