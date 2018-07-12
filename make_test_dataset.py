@@ -1,3 +1,4 @@
+import csv
 import random
 import math
 class UWB:
@@ -8,7 +9,7 @@ class UWB:
         distance = math.sqrt((self.x -robot_x)**2 + (self.y - robot_y)**2)
         return distance
     def getDistancewNoise(self,robot_x, robot_y):
-        distance = math.sqrt((self.x -robot_x)**2 + (self.y - robot_y)**2) + 5*random.random()
+        distance = math.sqrt((self.x -robot_x)**2 + (self.y - robot_y)**2) + 500*random.random()
         return distance
 class Robot:
     def __init__(self, x, y):
@@ -26,7 +27,8 @@ uwb2 = UWB(5500,-500)
 uwb3 = UWB(5500,5500)
 uwb4 = UWB(-500,5500)
 
-train_file = open('data_for_test.txt','w')
+test_file = open('data_diagonal_w_big_error.csv','w', encoding ='utf-8',newline='')
+wr= csv.writer(test_file)
 kobuki = Robot(0, 0)
 
 for i in range(500):
@@ -41,10 +43,9 @@ for i in range(500):
     # dist2 = uwb2.getDistance(kobuki.getPose()[0], kobuki.getPose()[1])
     # dist3 = uwb3.getDistance(kobuki.getPose()[0], kobuki.getPose()[1])
     # dist4 = uwb4.getDistance(kobuki.getPose()[0], kobuki.getPose()[1])
-    train_file.write(str(dist1)+' '+str(dist2)+' '+str(dist3)+' '+str(dist4)+' '+ str(kobuki.pose_x)+' ' + str(kobuki.pose_y)+' \n')
-    train_file.write(str(dist1)+' '+str(dist2)+' '+str(dist3)+' '+str(dist4)+' '+ str(kobuki.pose_x)+' ' + str(kobuki.pose_y)+' \n')
+    wr.writerow([dist1, dist2, dist3, dist4, kobuki.pose_x, kobuki.pose_y])
 
 print(kobuki.getPose())
 print (uwb1.getDistance(0,0))
-train_file.close()
+test_file.close()
 

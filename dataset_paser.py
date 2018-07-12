@@ -1,10 +1,9 @@
-import cv2
 import numpy as np
 import os
 import random
 
 class Data:
-    def __init__(self, dir, batch_size ):
+    def __init__(self, dir, batch_size):
         self.dir = dir
         self.batch_size = batch_size
 
@@ -83,6 +82,17 @@ class Data:
         # batchgt = np.asarray(self.batch_gt, dtype=np.float32)
         # #batchgt = batchgt / 255.0 - 0.5
         #
-        return self.batch_input, self.batch_gt
 
+        return np.array([self.batch_input]), np.array([self.batch_gt])
 
+data_parser =Data('./data.txt',10)
+batch_input, y = data_parser.get_data()
+print (batch_input)
+print(y)
+print(batch_input.shape)
+print(y.shape)
+
+print('\n')
+batch_input, y = data_parser.get_data()
+print (batch_input)
+print(y)
