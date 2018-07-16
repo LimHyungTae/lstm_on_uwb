@@ -1,5 +1,4 @@
 import tensorflow as tf
-
 class BidirectionalLSTM:
     def __init__(self, args): # batch_size, input_size,sequence_length, hidden_size, output_size):
         self.batch_size = args.batch_size
@@ -24,7 +23,40 @@ class BidirectionalLSTM:
             # outputs : tuple
             a = tf.contrib.seq2seq.python.ops.decoder()
             return tf.nn.dynamic_rnn(cell, self.X_data, dtype=tf.float32)
-
+    #
+    # def setEncoderDecoderModel(self):
+    #         encoder_cell = tf.nn.rnn_cell.BasicLSTMCell(num_units = self.hidden_size)
+    #         #   encoder_outputs: [max_time, batch_size, num_units]
+    #         #   encoder_state: [batch_size, num_units]
+    #         encoder_outputs, encoder_state = tf.nn.dynamic_rnn(encoder_cell, self.X_data, dtype = tf.float32)
+    #             # sequence_length=source_sequence_length, time_major=True)
+    #
+    #         # Build RNN cell
+    #         decoder_cell = tf.nn.rnn_cell.BasicLSTMCell(num_units = self.hidden_size)
+    #         attention = tf.contrib.seq2seq.LuongAttention()
+    #         # Helper
+    #         helper = tf.contrib.seq2seq.TrainingHelper(
+    #             decoder_emb_inp, decoder_lengths, time_major=True)
+    #         # Decoder
+    #         decoder = tf.contrib.seq2seq.BasicDecoder(
+    #             decoder_cell, helper, encoder_state,
+    #             output_layer=projection_layer)
+    #         # Dynamic decoding
+    #         outputs, _ = tf.contrib.seq2seq.dynamic_decode(decoder, ...)
+    #         logits = outputs.rnn_output
+    #
+    #         # attention_states: [batch_size, max_time, num_units]
+    #
+    #         attention_states = tf.transpose(encoder_outputs, [1, 0, 2])
+    #
+    #         # Create an attention mechanism
+    #         attention_mechanism = tf.contrib.seq2seq.LuongAttention(
+    #         num_units, attention_states,
+    #         memory_sequence_length=source_sequence_length)
+    #
+    #         decoder_cell = tf.contrib.seq2seq.AttentionWrapper(
+    #         decoder_cell, attention_mechanism,
+    #         attention_layer_size=num_units)
 
     def setBidirectionalLSTM(self):
         with tf.variable_scope("bidirectional_lstm"):
@@ -44,7 +76,9 @@ class BidirectionalLSTM:
                 # outputs = tf.reduce_sum(outputs, axis=0)
                 outputs = tf.concat([outputs[0], outputs[1]], axis = 1)
             ## FC layer
-            X_for_fc = tf.reshape(outputs, [-1, self.hidden_size*2])  # -1 for flatten
+                X_for_fc = tf.reshape(outputs, [-1, self.hidden_size*2])  # -1 for flatten
+            else:
+                X_for_fc = tf.reshape(outputs, [-1, self.hidden_size])  # -1 for flatten
             # outputs = tf.contrib.layers.fully_connected(X_for_fc, 100, activation_fn=None)
             Y_pred = tf.contrib.layers.fully_connected(X_for_fc, 100)
             Y_pred = tf.contrib.layers.fully_connected(Y_pred, self.output_size, activation_fn=None)
@@ -76,3 +110,8 @@ class BidirectionalLSTM:
             tf.summary.scalar('global learning rate', self.cur_lr)
 
             self.train = tf.train.AdamOptimizer(learning_rate= self.cur_lr).minimize(self.loss)
+            # optimizer = tf.train.AdamOptimizer(learning_rate= self.cur_lr).minimize(self.loss)
+            # #Below line is for clipping. When train lstm, clipping let lstm train well
+            # gvs = optimizer.compute_gradients(self.loss)
+            # capped_gvs = [(tf.clip_by_value(grad, -1., 1.), var) for grad, var in gvs]
+            # self.train = optimizer.apply_gradients(capped_gvs)
