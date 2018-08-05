@@ -18,11 +18,11 @@ class LSTM:
         self.build_model()
     def setUnidirectionalLSTM(self):
         with tf.variable_scope("unidirectional_lstm"):
-            cell = tf.contrib.rnn.BasicLSTMCell(num_units = self.hidden_size)
-
+            #cell = tf.contrib.rnn.BasicLSTMCell(num_units = self.hidden_size)
+            cell = tf.contrib.rnn.
             self.isbidirectional = 0
             # outputs : tuple
-            a = tf.contrib.seq2seq.python.ops.decoder()
+
             return tf.nn.dynamic_rnn(cell, self.X_data, dtype=tf.float32)
     #
     # def setEncoderDecoderModel(self):
@@ -71,7 +71,7 @@ class LSTM:
             return tf.nn.bidirectional_dynamic_rnn(cell_forward, cell_backward, self.X_data, dtype=tf.float32)
 
     def build_model(self):
-            outputs, _states = self.setBidirectionalLSTM()
+            outputs, _states = self.setUnidirectionalLSTM()
             if (self.isbidirectional):
                 print ("It's bidirectional")
                 # outputs = tf.reduce_sum(outputs, axis=0)

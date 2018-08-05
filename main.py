@@ -9,7 +9,7 @@ from tqdm import tqdm, trange
 import os
 import argparse
 import csv
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3'
 tf.set_random_seed(777)  # reproducibility
 # hyper parameters
 p =argparse.ArgumentParser()
