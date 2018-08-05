@@ -18,8 +18,7 @@ class LSTM:
         self.build_model()
     def setUnidirectionalLSTM(self):
         with tf.variable_scope("unidirectional_lstm"):
-            #cell = tf.contrib.rnn.BasicLSTMCell(num_units = self.hidden_size)
-            cell = tf.contrib.rnn.
+            cell = tf.contrib.rnn.BasicLSTMCell(num_units = self.hidden_size)
             self.isbidirectional = 0
             # outputs : tuple
 

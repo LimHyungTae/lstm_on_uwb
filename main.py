@@ -9,17 +9,17 @@ from tqdm import tqdm, trange
 import os
 import argparse
 import csv
-os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 tf.set_random_seed(777)  # reproducibility
 # hyper parameters
 p =argparse.ArgumentParser()
 p.add_argument('--train_data', type=str, default="inputs/train_data_2D_zigzag_error_10.csv")
-p.add_argument('--save_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/")
+p.add_argument('--save_dir', type=str, default="model/RiTA/unidirectional_LSTM_model/")
 p.add_argument('--load_dir', type=str, default="model/bidirectional_LSTM_model/")
 p.add_argument('--lr', type=float, default = 0.008)
 p.add_argument('--decay_rate', type=float, default = 0.85)
-p.add_argument('--epoches', type=int, default = 10000)
-p.add_argument('--batch_size', type=int, default = 149998)
+p.add_argument('--epoches', type=int, default = 30000)
+p.add_argument('--batch_size', type=int, default = 299996)
 p.add_argument('--hidden_size', type=int, default = 2) # RNN output size
 p.add_argument('--input_size', type=int, default = 4) #RNN input size : number of uwb
 p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
@@ -57,7 +57,7 @@ with tf.Session() as sess:
 
         sess.run(tf.global_variables_initializer())
 
-        writer = tf.summary.FileWriter('./board/lstm_RiTA_train_bidirectional',sess.graph)
+        writer = tf.summary.FileWriter('./board/lstm_RiTA_train_unidirectional',sess.graph)
         step = 0
         min_loss = 2
         tqdm_range = trange(args.epoches, desc = 'Loss', leave = True)
