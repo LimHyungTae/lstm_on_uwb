@@ -85,7 +85,7 @@ class LSTM:
 
             # Y_pred = tf.reshape(Y_pred, [batch_size, sequence_length, num_classes])
             self.Y_pred = tf.reshape(Y_pred, [-1, self.sequence_length, self.output_size])
-
+            self.Y_pred =  self.Y_pred[:,-1,:]
 
     def build_loss(self, lr, lr_decay_rate, lr_decay_step):
         self.init_lr = lr
@@ -96,7 +96,7 @@ class LSTM:
         with tf.variable_scope('lstm_loss'):
             # loss = tf.losses.mean_squared_error(Y, outputs, weights=weights)#reduction=tf.losses.Reduction.MEAN)
             # loss = tf.reduce_mean(tf.square(Y-outputs))
-            self.loss = tf.reduce_sum(tf.square(self.Y_data - self.Y_pred))
+            self.loss = tf.reduce_sum(tf.square(self.Y_data[:, -1, :] - self.Y_pred))
             tf.summary.scalar('lstm_loss', self.loss)
 
         with tf.variable_scope('train'):
