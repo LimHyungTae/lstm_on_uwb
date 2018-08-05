@@ -14,11 +14,11 @@ tf.set_random_seed(777)  # reproducibility
 # hyper parameters
 p =argparse.ArgumentParser()
 p.add_argument('--train_data', type=str, default="inputs/train_data_2D_zigzag_error_10.csv")
-p.add_argument('--save_dir', type=str, default="model/RiTA/unidirectional_LSTM_model/")
+p.add_argument('--save_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/")
 p.add_argument('--load_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/")
 p.add_argument('--lr', type=float, default = 0.008)
-p.add_argument('--decay_rate', type=float, default = 0.85)
-p.add_argument('--epoches', type=int, default = 30000)
+p.add_argument('--decay_rate', type=float, default = 0.7)
+p.add_argument('--epoches', type=int, default = 10000)
 p.add_argument('--batch_size', type=int, default = 299996)
 p.add_argument('--hidden_size', type=int, default = 2) # RNN output size
 p.add_argument('--input_size', type=int, default = 4) #RNN input size : number of uwb
@@ -35,6 +35,9 @@ data_parser.fit_data()
 
 X_data,Y_data =data_parser.set_data()
 # data : size of data - sequence length + 1
+
+# tf.reset_default_graph()
+
 LSTM = LSTM(args) #batch_size, dic_size, sequence_length, hidden_size, num_classes)
 print(X_data.shape) #Data size / sequence length / uwb num
 
@@ -45,7 +48,7 @@ num_total_steps = args.epoches*iter
 # boundaries = [np.int32((3/5) * num_total_steps), np.int32((4/5) * num_total_steps), np.int32((9/10) * num_total_steps)]
 # values = [learning_rate, learning_rate / 2, learning_rate / 4, learning_rate/8]
 # learning_rate_decay = tf.train.piecewise_constant(global_step, boundaries, values)
-LSTM.build_loss(args.lr, args.decay_rate, num_total_steps/5)
+LSTM.build_loss(args.lr, args.decay_rate, num_total_steps/6)
 saver = tf.train.Saver(max_to_keep = 5)
 
 # Use simple momentum for the optimization.
@@ -79,7 +82,7 @@ with tf.Session() as sess:
 
     elif (args.mode =='test'):
    #For save diagonal data
-        saver.restore(sess, args.load_dir + 'model_0_001-10000')
+        saver.restore(sess, args.load_dir + 'model_0_00016-9998')
    # tf.train.latest_checkpoint(
 
         test_data = 'test_data_arbitrary_path2D.csv'

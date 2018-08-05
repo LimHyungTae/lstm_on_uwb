@@ -108,14 +108,22 @@ class DataPreprocessing:
         result_file = open(out_dir, 'w', encoding='utf-8', newline='')
         wr = csv.writer(result_file)
 
-        for sequence_list in prediction[0]: # bc shape of prediction is "[" [[[hidden_size]*sequence_length] ... ] "]"
-            np_sequence = np.array(sequence_list, dtype=np.float32)
+        for sequence_list in prediction[0]: # bc shape of prediction is "[" [[[hidden_size]*sequence_length], ... ] "]"
+            # np_sequence = np.array(sequence_list, dtype=np.float32)
+            #
+            # # scaler for inverse transform of prediction
+            # transformed_sequence = self.scaler_for_prediction.inverse_transform(np_sequence)
+            # for i in transformed_sequence:
+            #     wr.writerow([i[0], i[1]])
+
 
             # scaler for inverse transform of prediction
-            transformed_sequence = self.scaler_for_prediction.inverse_transform(np_sequence)
+            transformed_sequence = self.scaler_for_prediction.inverse_transform([sequence_list])
             for i in transformed_sequence:
                 wr.writerow([i[0], i[1]])
+
         result_file.close()
+
 
 
 #Below Line : Extract colums that we want to extract#
