@@ -15,7 +15,7 @@ tf.set_random_seed(777)  # reproducibility
 p =argparse.ArgumentParser()
 p.add_argument('--train_data', type=str, default="inputs/train_data_2D_zigzag_error_10.csv")
 p.add_argument('--save_dir', type=str, default="model/RiTA/unidirectional_LSTM_model/")
-p.add_argument('--load_dir', type=str, default="model/bidirectional_LSTM_model/")
+p.add_argument('--load_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/")
 p.add_argument('--lr', type=float, default = 0.008)
 p.add_argument('--decay_rate', type=float, default = 0.85)
 p.add_argument('--epoches', type=int, default = 30000)
@@ -24,7 +24,7 @@ p.add_argument('--hidden_size', type=int, default = 2) # RNN output size
 p.add_argument('--input_size', type=int, default = 4) #RNN input size : number of uwb
 p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
 p.add_argument('--output_size', type=int, default = 2) #final output size (RNN or softmax, etc)
-p.add_argument('--mode', type=str, default = "train") #train or test
+p.add_argument('--mode', type=str, default = "test") #train or test
 args = p.parse_args()
 
 
@@ -82,27 +82,28 @@ with tf.Session() as sess:
         saver.restore(sess, args.load_dir + 'model_0_001-10000')
    # tf.train.latest_checkpoint(
 
-        diagonal_data = 'inputs/data_diagonal_w_big_error.csv'
-        data_parser.dir = diagonal_data
-        X_test, Y_test = data_parser.set_test_data()
+        test_data = 'test_data_arbitrary_path2D.csv'
+        # diagonal_data = 'inputs/data_diagonal_w_big_error.csv'
+        data_parser.dir = test_data
+        X_test, Y_test = data_parser.set_data()
         prediction = sess.run([LSTM.Y_pred], feed_dict={LSTM.X_data: X_test}) #prediction : type: list, [ [[[hidden_size]*sequence_length] ... ] ]
 
-        data_parser.write_file_data('results/result_diagonal.csv', prediction)
+        data_parser.write_file_data('results/RiTA/result_bidirectional.csv', prediction)
     #trilateration
 
-        trilateration = trilateration.Trilateration(diagonal_data, 'results/result_diagonal_w_trilateration.csv')
-        trilateration.write_file_data2D()
-
-        #For save one round path data
-        round_data =  'inputs/data_round1_w_big_error.csv'
-        data_parser.dir = round_data
-        X_test, Y_test = data_parser.set_test_data()
-        prediction1 = sess.run([LSTM.Y_pred], feed_dict={LSTM.X_data: X_test})
-        data_parser.write_file_data('results/result_round1.csv', prediction1)
-
-        #trilateration
-        # trilateration = trilateration.Trilateration(diagonal_data, 'results/result_round1_w_trilateration.csv')
-        trilateration.dir =round_data
-        trilateration.output_dir = 'results/result_round1_w_trilateration.csv'
-        trilateration.write_file_data2D()
+        # trilateration = trilateration.Trilateration(diagonal_data, 'results/result_diagonal_w_trilateration.csv')
+        # trilateration.write_file_data2D()
+        #
+        # #For save one round path data
+        # round_data =  'inputs/data_round1_w_big_error.csv'
+        # data_parser.dir = round_data
+        # X_test, Y_test = data_parser.set_test_data()
+        # prediction1 = sess.run([LSTM.Y_pred], feed_dict={LSTM.X_data: X_test})
+        # data_parser.write_file_data('results/result_round1.csv', prediction1)
+        #
+        # #trilateration
+        # # trilateration = trilateration.Trilateration(diagonal_data, 'results/result_round1_w_trilateration.csv')
+        # trilateration.dir =round_data
+        # trilateration.output_dir = 'results/result_round1_w_trilateration.csv'
+        # trilateration.write_file_data2D()
 

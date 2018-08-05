@@ -2,7 +2,7 @@ import random
 import math
 import csv
 
-ISZIGZAG = True
+ISZIGZAG = False
 UNCERTAINTY = 0.1
 DIMENSION = '2D'
 ROUNDNUM = 20
@@ -48,6 +48,7 @@ uwb3 = UWB( 4.5, 4.5, 0)
 uwb4 = UWB( 0.9, 2.7, 0)
 
 file_name = 'train_data_' + DIMENSION
+# file_name = 'test_data_arbitrary_path' + DIMENSION
 if (ISZIGZAG):
     file_name = file_name +'_' + 'zigzag'
 file_name = file_name + '.csv'
@@ -136,57 +137,68 @@ class CSVWriter():
             dist_list = self.moveRobot(DELTALENGTH, DELTALENGTH, 0.0)
             self.writerow(dist_list)
     def drawTestPath(self):
-
+            # 0,0 -> 1,0
             for i in range(100):
                 dist_list = self.moveRobot(DELTALENGTH, 0.0, 0.0)
                 self.writerow(dist_list)
-
+            # -> 2,1.5
             for i in range(200):
                 dist_list = self.moveRobot(DELTALENGTH/2, DELTALENGTH*3/4, 0.0)
                 self.writerow(dist_list)
-            for i in range(200):
-                dist_list = self.moveRobot(DELTALENGTH*3/4, -DELTALENGTH/2, 0.0)
+            # -> 4,0
+            for i in range(250):
+                dist_list = self.moveRobot(DELTALENGTH*4/5, -DELTALENGTH*3/5, 0.0)
                 self.writerow(dist_list)
+            # -> 5,4
             for i in range(412):
                 dist_list = self.moveRobot(DELTALENGTH/4.12, DELTALENGTH*4/4.12, 0.0)
                 self.writerow(dist_list)
-
+            # -> 1,5
             for i in range(412):
-                dist_list = self.moveRobot(-DELTALENGTH*4/412, DELTALENGTH/4.12, 0.0)
+                dist_list = self.moveRobot(-DELTALENGTH*4/4.12, DELTALENGTH/4.12, 0.0)
                 self.writerow(dist_list)
-
+            # -> 4,4
             for i in range(315):
                 dist_list = self.moveRobot(DELTALENGTH*3/3.15, -DELTALENGTH/3.15, 0.0)
                 self.writerow(dist_list)
+            # -> 3,3
             for i in range(100):
                 dist_list = self.moveRobot(-DELTALENGTH, -DELTALENGTH, 0.0)
                 self.writerow(dist_list)
+            # -> 2,4
             for i in range(100):
                 dist_list = self.moveRobot(-DELTALENGTH, DELTALENGTH, 0.0)
                 self.writerow(dist_list)
-
-            for i in range(180):
-                dist_list = self.moveRobot(-DELTALENGTH*2/3.6,-DELTALENGTH*3/3.6, 0.0)
+            # -> 1, 1.5
+            for i in range(269):
+                dist_list = self.moveRobot(-DELTALENGTH*2/5.38,-DELTALENGTH*5/5.38, 0.0)
                 self.writerow(dist_list)
 
+            # -> 1.75, 2
             for i in range(90):
                 dist_list = self.moveRobot(DELTALENGTH*3/3.6,DELTALENGTH*2/3.6, 0.0)
                 self.writerow(dist_list)
 
+            # -> 1.25, 2.75
             for i in range(90):
                 dist_list = self.moveRobot(-DELTALENGTH*2/3.6,DELTALENGTH*3/3.6, 0.0)
                 self.writerow(dist_list)
 
-            for i in range(150):
+            # 1.25, 1.95
+            for i in range(80):
                 dist_list = self.moveRobot(0.0,-DELTALENGTH, 0.0)
                 self.writerow(dist_list)
-
-            for i in range(224):
-                dist_list = self.moveRobot(-DELTALENGTH/2.24, -DELTALENGTH*2/2.24, 0.0)
+            # 0, 0
+            print (self.kobuki.x, self.kobuki.y)
+            for i in range(231):
+                dist_list = self.moveRobot(-DELTALENGTH*1.25/2.31, -DELTALENGTH*1.95/2.31, 0.0)
                 self.writerow(dist_list)
+            print (self.kobuki.x, self.kobuki.y)
+
+
 dataWriter = CSVWriter(wr, kobuki)
 
-dataWriter.drawZigzagPath(50)
+dataWriter.drawTestPath()
 
 
 print ("Make "+file_name)
