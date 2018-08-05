@@ -135,7 +135,55 @@ class CSVWriter():
         for i in range(self.iteration_num):
             dist_list = self.moveRobot(DELTALENGTH, DELTALENGTH, 0.0)
             self.writerow(dist_list)
+    def drawTestPath(self):
 
+            for i in range(100):
+                dist_list = self.moveRobot(DELTALENGTH, 0.0, 0.0)
+                self.writerow(dist_list)
+
+            for i in range(200):
+                dist_list = self.moveRobot(DELTALENGTH/2, DELTALENGTH*3/4, 0.0)
+                self.writerow(dist_list)
+            for i in range(200):
+                dist_list = self.moveRobot(DELTALENGTH*3/4, -DELTALENGTH/2, 0.0)
+                self.writerow(dist_list)
+            for i in range(412):
+                dist_list = self.moveRobot(DELTALENGTH/4.12, DELTALENGTH*4/4.12, 0.0)
+                self.writerow(dist_list)
+
+            for i in range(412):
+                dist_list = self.moveRobot(-DELTALENGTH*4/412, DELTALENGTH/4.12, 0.0)
+                self.writerow(dist_list)
+
+            for i in range(315):
+                dist_list = self.moveRobot(DELTALENGTH*3/3.15, -DELTALENGTH/3.15, 0.0)
+                self.writerow(dist_list)
+            for i in range(100):
+                dist_list = self.moveRobot(-DELTALENGTH, -DELTALENGTH, 0.0)
+                self.writerow(dist_list)
+            for i in range(100):
+                dist_list = self.moveRobot(-DELTALENGTH, DELTALENGTH, 0.0)
+                self.writerow(dist_list)
+
+            for i in range(180):
+                dist_list = self.moveRobot(-DELTALENGTH*2/3.6,-DELTALENGTH*3/3.6, 0.0)
+                self.writerow(dist_list)
+
+            for i in range(90):
+                dist_list = self.moveRobot(DELTALENGTH*3/3.6,DELTALENGTH*2/3.6, 0.0)
+                self.writerow(dist_list)
+
+            for i in range(90):
+                dist_list = self.moveRobot(-DELTALENGTH*2/3.6,DELTALENGTH*3/3.6, 0.0)
+                self.writerow(dist_list)
+
+            for i in range(150):
+                dist_list = self.moveRobot(0.0,-DELTALENGTH, 0.0)
+                self.writerow(dist_list)
+
+            for i in range(224):
+                dist_list = self.moveRobot(-DELTALENGTH/2.24, -DELTALENGTH*2/2.24, 0.0)
+                self.writerow(dist_list)
 dataWriter = CSVWriter(wr, kobuki)
 
 dataWriter.drawZigzagPath(50)
