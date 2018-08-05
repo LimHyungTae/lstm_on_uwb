@@ -63,7 +63,6 @@ class CSVWriter():
         self.kobuki = kobuki
         self.iteration_num = int(ONESIDELENGTH/DELTALENGTH)
     def writerow(self, dist_list):
-        print (self.kobuki.x, self.kobuki.y)
         if (self.dimension == '2D'):
             self.wr.writerow(dist_list +(self.kobuki.x, self.kobuki.y))
 
@@ -138,7 +137,9 @@ class CSVWriter():
             self.writerow(dist_list)
 
 dataWriter = CSVWriter(wr, kobuki)
-dataWriter.drawSquarePath(1)
+
+dataWriter.drawZigzagPath(50)
+
 
 print ("Make "+file_name)
 

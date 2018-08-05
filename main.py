@@ -1,7 +1,7 @@
 # Lab 12 Character Sequence RNN
 import tensorflow as tf
 import tensorflow.contrib.seq2seq as seq2seq
-from lstm_network import BidirectionalLSTM
+from lstm_network import LSTM
 import numpy as np
 import DataPreprocessing
 import trilateration
@@ -13,16 +13,16 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 tf.set_random_seed(777)  # reproducibility
 # hyper parameters
 p =argparse.ArgumentParser()
-p.add_argument('--train_data', type=str, default="inputs/data_train_w_big_error.csv")
-p.add_argument('--save_dir', type=str, default="model/bidirectional_LSTM_model/")
+p.add_argument('--train_data', type=str, default="inputs/train_data_2D_zigzag_error_10.csv")
+p.add_argument('--save_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/")
 p.add_argument('--load_dir', type=str, default="model/bidirectional_LSTM_model/")
 p.add_argument('--lr', type=float, default = 0.008)
 p.add_argument('--decay_rate', type=float, default = 0.85)
 p.add_argument('--epoches', type=int, default = 10000)
-p.add_argument('--batch_size', type=int, default = 99990)
+p.add_argument('--batch_size', type=int, default = 149998)
 p.add_argument('--hidden_size', type=int, default = 2) # RNN output size
 p.add_argument('--input_size', type=int, default = 4) #RNN input size : number of uwb
-p.add_argument('--sequence_length', type=int, default = 10) # # of lstm rolling
+p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
 p.add_argument('--output_size', type=int, default = 2) #final output size (RNN or softmax, etc)
 p.add_argument('--mode', type=str, default = "train") #train or test
 args = p.parse_args()
@@ -35,8 +35,8 @@ data_parser.fit_data()
 
 X_data,Y_data =data_parser.set_data()
 # data : size of data - sequence length + 1
-LSTM = BidirectionalLSTM (args) #batch_size, dic_size, sequence_length, hidden_size, num_classes)
-print(X_data.shape)
+LSTM = LSTM(args) #batch_size, dic_size, sequence_length, hidden_size, num_classes)
+print(X_data.shape) #Data size / sequence length / uwb num
 
 #terms for learning rate decay
 global_step = tf.Variable(0, trainable=False)
@@ -57,7 +57,7 @@ with tf.Session() as sess:
 
         sess.run(tf.global_variables_initializer())
 
-        writer = tf.summary.FileWriter('./board/lstm_train',sess.graph)
+        writer = tf.summary.FileWriter('./board/lstm_RiTA_train_bidirectional',sess.graph)
         step = 0
         min_loss = 2
         tqdm_range = trange(args.epoches, desc = 'Loss', leave = True)
@@ -76,6 +76,7 @@ with tf.Session() as sess:
                 saver.save(sess, args.save_dir + 'model_'+'{0:.5f}'.format(loss_of_epoch).replace('.','_'), global_step=step)
             tqdm_range.set_description('Loss ' +'{0:.7f}'.format(loss_of_epoch)+'  ')
             tqdm_range.refresh()
+
     elif (args.mode =='test'):
    #For save diagonal data
         saver.restore(sess, args.load_dir + 'model_0_001-10000')

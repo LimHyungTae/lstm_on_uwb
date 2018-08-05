@@ -1,5 +1,6 @@
 import tensorflow as tf
-class BidirectionalLSTM:
+
+class LSTM:
     def __init__(self, args): # batch_size, input_size,sequence_length, hidden_size, output_size):
         self.batch_size = args.batch_size
         self.input_size = args.input_size
