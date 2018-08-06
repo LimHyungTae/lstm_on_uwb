@@ -70,7 +70,7 @@ class LSTM:
             return tf.nn.bidirectional_dynamic_rnn(cell_forward, cell_backward, self.X_data, dtype=tf.float32)
 
     def build_model(self):
-            outputs, _states = self.setBidirectionalLSTM()
+            outputs, _states = self.setUnidirectionalLSTM()
             if (self.isbidirectional):
                 print ("It's bidirectional")
                 # outputs = tf.reduce_sum(outputs, axis=0)
@@ -85,7 +85,7 @@ class LSTM:
 
             # Y_pred = tf.reshape(Y_pred, [batch_size, sequence_length, num_classes])
             self.Y_pred = tf.reshape(Y_pred, [-1, self.sequence_length, self.output_size])
-            self.Y_pred =  self.Y_pred[:,-1,:]
+            self.Y_pred =  self.Y_pred[:,-1,:] # batch, sequence_length, output_size -> batch, 1, output_size
 
     def build_loss(self, lr, lr_decay_rate, lr_decay_step):
         self.init_lr = lr
