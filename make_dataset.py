@@ -2,10 +2,9 @@ import random
 import math
 import csv
 
-ISZIGZAG = False
+ISZIGZAG = True
 UNCERTAINTY = 0.1
 DIMENSION = '2D'
-ROUNDNUM = 20
 DELTALENGTH = 0.01
 ONESIDELENGTH = 5
 
@@ -42,12 +41,16 @@ class Robot(position):
         self.y += dy
         self.z += dz
 
-uwb1 = UWB( 0.9, 0.9, 0)
-uwb2 = UWB( 4.5,-0.9, 0)
-uwb3 = UWB( 4.5, 4.5, 0)
-uwb4 = UWB( 0.9, 2.7, 0)
-
-file_name = 'train_data_' + DIMENSION
+uwb1 = UWB( -0.5, -0.5, 0)
+uwb2 = UWB( 5.5,-0.5, 0)
+uwb3 = UWB( 5.5, 5.5, 0)
+uwb4 = UWB( -0.5, 5.5, 0)
+# Below :
+# uwb1 = UWB( 0.9, 0.9, 0)
+# uwb2 = UWB( 4.5,-0.9, 0)
+# uwb3 = UWB( 4.5, 4.5, 0)
+# uwb4 = UWB( 0.9, 2.7, 0)
+file_name = 'train_data_square' + DIMENSION
 # file_name = 'test_data_arbitrary_path' + DIMENSION
 if (ISZIGZAG):
     file_name = file_name +'_' + 'zigzag'
@@ -198,7 +201,7 @@ class CSVWriter():
 
 dataWriter = CSVWriter(wr, kobuki)
 
-dataWriter.drawTestPath()
+dataWriter.drawZigzagPath(50)
 
 
 print ("Make "+file_name)
