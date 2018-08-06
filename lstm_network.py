@@ -70,7 +70,7 @@ class LSTM:
             return tf.nn.bidirectional_dynamic_rnn(cell_forward, cell_backward, self.X_data, dtype=tf.float32)
 
     def build_model(self):
-            outputs, _states = self.setUnidirectionalLSTM()
+            outputs, _states = self.setBidirectionalLSTM()
             if (self.isbidirectional):
                 print ("It's bidirectional")
                 # outputs = tf.reduce_sum(outputs, axis=0)
