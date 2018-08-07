@@ -10,13 +10,13 @@ import os
 import argparse
 import csv
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-tf.set_random_seed(777)  # reproducibility
+tf.set_random_seed(777)  # reproducibilityb
 # hyper parameters
 p =argparse.ArgumentParser()
 #FOR TRAIN
-p.add_argument('--train_data', type=str, default="inputs/train_data_2D_zigzag_error_10.csv")
-p.add_argument('--board_dir', type=str, default="./board/lstm_RiTA_train_unidirectional/")
-p.add_argument('--save_dir', type=str, default="model/RiTA/unidirectional_LSTM_model/")
+p.add_argument('--train_data', type=str, default="inputs/train_data_uwb_square_2D_zigzag_e10.csv")
+p.add_argument('--board_dir', type=str, default="./board/lstm_RiTA_train_bidirectional/")
+p.add_argument('--save_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/")
 p.add_argument('--lr', type=float, default = 0.008)
 p.add_argument('--decay_rate', type=float, default = 0.7)
 p.add_argument('--decay_step', type=int, default = 9)
@@ -30,7 +30,7 @@ p.add_argument('--output_size', type=int, default = 2) #final output size (RNN o
 p.add_argument('--load_model_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/model_0_00016-9998")
 p.add_argument('--test_data', type=str, default='test_data_arbitrary_path2D.csv')
 p.add_argument('--output_results', type=str, default= 'results/RiTA/result_bidirectional.csv')
-###########
+###########ru
 p.add_argument('--mode', type=str, default = "train") #train or test
 args = p.parse_args()
 
