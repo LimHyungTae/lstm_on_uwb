@@ -7,7 +7,7 @@ class LSTM:
         self.hidden_size = args.hidden_size
         self.output_size = args.output_size
         self.sequence_length = args.sequence_length
-
+        self.networks = args.network_model
         self.X_data = tf.placeholder(dtype=tf.float32,
                                            shape=[None, self.sequence_length, self.input_size],
                                            name='input_placeholder')
@@ -70,17 +70,17 @@ class LSTM:
             return tf.nn.bidirectional_dynamic_rnn(cell_forward, cell_backward, self.X_data, dtype=tf.float32)
 
     def build_model(self):
-            outputs, _states = self.setBidirectionalLSTM()
-            if (self.isbidirectional):
-                print ("It's bidirectional LSTM")
-                # outputs = tf.reduce_sum(outputs, axis=0)
-                outputs = tf.concat([outputs[0], outputs[1]], axis = 1)
-
-            ## FC layer
-                X_for_fc = tf.reshape(outputs, [-1, self.hidden_size*2])  # -1 for flatten
-            else:
+            if (self.networks == 'bi'):
+                outputs, _states = self.setBidirectionalLSTM()
+                outputs = tf.concat([outputs[0], outputs[1]], axis=1)
+                ## FC layer
+                X_for_fc = tf.reshape(outputs, [-1, self.hidden_size * 2])  # -1 for flatten
+                print ("Bidirectional LSTM")
+            elif (self.networks =='uni'):
+                outputs, _states = self.setUnidirectionalLSTM()
                 X_for_fc = tf.reshape(outputs, [-1, self.hidden_size])  # -1 for flatten
                 print ("Unidirectional LSTM")
+
             # outputs = tf.contrib.layers.fully_connected(X_for_fc, 100, activation_fn=None)
             Y_pred = tf.contrib.layers.fully_connected(X_for_fc, 100)
             Y_pred = tf.contrib.layers.fully_connected(Y_pred, self.output_size, activation_fn=None)

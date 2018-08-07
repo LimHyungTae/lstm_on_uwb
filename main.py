@@ -15,8 +15,10 @@ tf.set_random_seed(777)  # reproducibilityb
 p =argparse.ArgumentParser()
 #FOR TRAIN
 p.add_argument('--train_data', type=str, default="inputs/train_data_uwb_square_2D_zigzag_e10.csv")
-p.add_argument('--board_dir', type=str, default="./board/lstm_RiTA_train_bidirectional/")
-p.add_argument('--save_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/")
+p.add_argument('--board_dir', type=str, default="./board/lstm_RiTA_train_unidirectional/")
+p.add_argument('--save_dir', type=str, default="model/RiTA/unidirectional_LSTM_model/")
+p.add_argument('--network_model', type=str, default="bi")
+
 p.add_argument('--lr', type=float, default = 0.008)
 p.add_argument('--decay_rate', type=float, default = 0.7)
 p.add_argument('--decay_step', type=int, default = 9)
@@ -31,7 +33,7 @@ p.add_argument('--load_model_dir', type=str, default="model/RiTA/unidirectional_
 p.add_argument('--test_data', type=str, default='inputs/test_data_arbitrary_path2D.csv')
 p.add_argument('--output_results', type=str, default= 'results/RiTA/result_unidirectional.csv')
 ###########ru
-p.add_argument('--mode', type=str, default = "test") #train or test
+p.add_argument('--mode', type=str, default = "train") #train or test
 args = p.parse_args()
 
 
