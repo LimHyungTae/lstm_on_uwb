@@ -27,11 +27,11 @@ p.add_argument('--input_size', type=int, default = 4) #RNN input size : number o
 p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
 p.add_argument('--output_size', type=int, default = 2) #final output size (RNN or softmax, etc)
 #FOR TEST
-p.add_argument('--load_model_dir', type=str, default="model/RiTA/bidirectional_LSTM_model/model_0_00016-9998")
-p.add_argument('--test_data', type=str, default='test_data_arbitrary_path2D.csv')
-p.add_argument('--output_results', type=str, default= 'results/RiTA/result_bidirectional.csv')
+p.add_argument('--load_model_dir', type=str, default="model/RiTA/unidirectional_LSTM_model/model_0_00013-19999")
+p.add_argument('--test_data', type=str, default='inputs/test_data_arbitrary_path2D.csv')
+p.add_argument('--output_results', type=str, default= 'results/RiTA/result_unidirectional.csv')
 ###########ru
-p.add_argument('--mode', type=str, default = "train") #train or test
+p.add_argument('--mode', type=str, default = "test") #train or test
 args = p.parse_args()
 
 
