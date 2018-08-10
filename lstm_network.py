@@ -74,6 +74,19 @@ class LSTM:
                 outputs, _states = self.setBidirectionalLSTM()
                 outputs = tf.concat([outputs[0], outputs[1]], axis=1)
                 ## FC layer
+                print ("Bidirectional LSTM")
+            elif (self.networks =='uni'):
+                outputs, _states = self.setUnidirectionalLSTM()
+                print ("Unidirectional LSTM")
+
+            # outputs = tf.contrib.layers.fully_connected(X_for_fc, 100, activation_fn=None)
+            self.Y_pred = outputs[:,-1, :]
+
+    def build_model_w_FCN(self):
+            if (self.networks == 'bi'):
+                outputs, _states = self.setBidirectionalLSTM()
+                outputs = tf.concat([outputs[0], outputs[1]], axis=1)
+                ## FC layer
                 X_for_fc = tf.reshape(outputs, [-1, self.hidden_size * 2])  # -1 for flatten
                 print ("Bidirectional LSTM")
             elif (self.networks =='uni'):

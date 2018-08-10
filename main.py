@@ -15,24 +15,24 @@ tf.set_random_seed(777)  # reproducibilityb
 p =argparse.ArgumentParser()
 #FOR TRAIN
 p.add_argument('--train_data', type=str, default="inputs/train_data_uwb_square_2D_zigzag_e10.csv")
-p.add_argument('--board_dir', type=str, default="./board/lstm_RiTA_train_unidirectional/")
-p.add_argument('--save_dir', type=str, default="model/RiTA/unidirectional_LSTM_model/")
+p.add_argument('--board_dir', type=str, default="./board/RiTA_wo_fcn/bidirectional_hidden1000/")
+p.add_argument('--save_dir', type=str, default="model/RiTA_wo_fcn/bidirectional_hidden1000/")
 p.add_argument('--network_model', type=str, default="bi")
 
 p.add_argument('--lr', type=float, default = 0.008)
 p.add_argument('--decay_rate', type=float, default = 0.7)
 p.add_argument('--decay_step', type=int, default = 9)
-p.add_argument('--epoches', type=int, default = 20000)
+p.add_argument('--epoches', type=int, default = 25000)
 p.add_argument('--batch_size', type=int, default = 299996)
-p.add_argument('--hidden_size', type=int, default = 2) # RNN output size
+p.add_argument('--hidden_size', type=int, default = 1000) # RNN output size
 p.add_argument('--input_size', type=int, default = 4) #RNN input size : number of uwb
 p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
 p.add_argument('--output_size', type=int, default = 2) #final output size (RNN or softmax, etc)
 #FOR TEST
-p.add_argument('--load_model_dir', type=str, default="model/RiTA/unidirectional_LSTM_model/model_0_00013-19999")
+p.add_argument('--load_model_dir', type=str, default="model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19933")
 p.add_argument('--test_data', type=str, default='inputs/test_data_arbitrary_path2D.csv')
-p.add_argument('--output_results', type=str, default= 'results/RiTA/result_unidirectional.csv')
-###########ru
+p.add_argument('--output_results', type=str, default= 'results/RiTA/bidirectional_wo_fcn.csv')
+###########
 p.add_argument('--mode', type=str, default = "train") #train or test
 args = p.parse_args()
 
