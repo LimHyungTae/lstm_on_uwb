@@ -5,15 +5,13 @@ import numpy as np
 import os
 p =argparse.ArgumentParser()
 p.add_argument('--save_dir', type=str, default="results/RiTA/graphs/")
-p.add_argument('--gt_dir', type=str, default="test_data_arbitrary_path2D.csv")
-p.add_argument('--bidirectional_LSTM_csv', type=str, default="results/RiTA/result_bidirectional.csv")
-p.add_argument('--unidirectional_LSTM_csv', type=str, default="model/RiTA/bidirectional_LSTM_model/")
+p.add_argument('--gt_dir', type=str, default="inputs/test_data_arbitrary_square_uwb_2D_e10.csv")
+p.add_argument('--bidirectional_LSTM_csv', type=str, default="results/RiTA/bidirectional_wo_fcn.csv")
+p.add_argument('--unidirectional_LSTM_csv', type=str, default= "results/RiTA/unidirectional_wo_fcn.csv")
 p.add_argument('--trilateration_csv', type=str, default="model/RiTA/bidirectional_LSTM_model/")
+p.add_argument('--save_MSE_name', type=str, default="Distance_error_result.png")
+p.add_argument('--save_trajectory_name', type=str, default="Trajectory_result.png")
 
-p.add_argument('--input_size', type=int, default = 4) #RNN input size : number of uwb
-p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
-p.add_argument('--output_size', type=int, default = 2) #final output size (RNN or softmax, etc)
-p.add_argument('--mode', type=str, default = "test") #train or test
 args = p.parse_args()
 
 class Visualization:
@@ -43,7 +41,7 @@ class Visualization:
         return np.sqrt(distance_square)
 
     def plotDistanceError(self, *target_files_csv):
-        saved_file_name = "Distance_error_result.png"
+        saved_file_name = self.args.save_MSE_name
         plot_title = "Distance Error"
         plt.title(plot_title)
 
@@ -82,13 +80,13 @@ class Visualization:
         print ("Done")
 
     def plot2DTrajectory(self, *target_files_csv):
-        saved_file_name = "Trajectory_result.png"
+        saved_file_name = self.args.save_trajectory_name
         plot_title = "Trajectory"
         # plt.title(plot_title)
         gt_x = self.gt_xy[:,0]
         gt_y = self.gt_xy[:,1]
 
-        plt.plot(gt_x, gt_y,'r*',linestyle='--' , label = 'GT')
+        plt.plot(gt_x, gt_y,'r',linestyle='--' , label = 'GT')
 
         for i, csv in enumerate(target_files_csv):
             predicted_xy = np.loadtxt(csv, delimiter = ',')
@@ -110,7 +108,7 @@ class Visualization:
                 marker ='*'
                 linestyle = '--'
                 label = 'Trilateration'
-            plt.plot(predicted_x, predicted_y, color = color, marker= marker,
+            plt.plot(predicted_x, predicted_y, color = color, #marker= marker,
                             linestyle = linestyle,label = label)
 
         plt.legend()
@@ -147,5 +145,5 @@ class Visualization:
         self.fig.savefig(self.folder_name +"/Results.png")
 
 viz = Visualization(args)
-viz.plotDistanceError(args.bidirectional_LSTM_csv)
-
+# viz.plotDistanceError(args.bidirectional_LSTM_csv)
+viz.plot2DTrajectory(args.bidirectional_LSTM_csv, args.unidirectional_LSTM_csv)
