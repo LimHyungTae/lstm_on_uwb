@@ -50,7 +50,7 @@ uwb4 = UWB( -0.5, 5.5, 0)
 # uwb2 = UWB( 4.5,-0.9, 0)
 # uwb3 = UWB( 4.5, 4.5, 0)
 # uwb4 = UWB( 0.9, 2.7, 0)
-file_name = 'train_data_square' + DIMENSION
+file_name = 'train_data_square_for_bi__prevent_overfitting' + DIMENSION
 # file_name = 'test_data_arbitrary_path' + DIMENSION
 if (ISZIGZAG):
     file_name = file_name +'_' + 'zigzag'
@@ -201,7 +201,7 @@ class CSVWriter():
 
 dataWriter = CSVWriter(wr, kobuki)
 
-dataWriter.drawZigzagPath(50)
+dataWriter.drawZigzagPath(250)
 
 
 print ("Make "+file_name)
