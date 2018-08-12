@@ -24,7 +24,7 @@ p.add_argument('--decay_rate', type=float, default = 0.66)
 p.add_argument('--decay_step', type=int, default = 3)
 p.add_argument('--epoches', type=int, default = 10000)
 p.add_argument('--batch_size', type=int, default = 802815)
-p.add_argument('--hidden_size', type=int, default = 1000) # RNN output size
+p.add_argument('--hidden_size', type=int, default = 2) # RNN output size
 p.add_argument('--input_size', type=int, default = 4) #RNN input size : number of uwb
 p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
 p.add_argument('--output_size', type=int, default = 2) #final output size (RNN or softmax, etc)
@@ -49,6 +49,7 @@ X_data,Y_data =data_parser.set_data()
 
 LSTM = LSTM(args) #batch_size, dic_size, sequence_length, hidden_size, num_classes)
 print(X_data.shape) #Data size / sequence length / uwb num
+
 
 #terms for learning rate decay
 global_step = tf.Variable(0, trainable=False)

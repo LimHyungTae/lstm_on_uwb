@@ -15,7 +15,7 @@ class LSTM:
                                         shape=[None, self.sequence_length,self.hidden_size],
                                         name='output_placeholder')
 
-        self.build_model()
+        self.build_model_w_FCN()
     def setUnidirectionalLSTM(self):
         with tf.variable_scope("unidirectional_lstm"):
             cell = tf.contrib.rnn.BasicLSTMCell(num_units = self.hidden_size)
