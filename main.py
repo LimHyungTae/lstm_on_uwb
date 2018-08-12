@@ -15,16 +15,16 @@ tf.set_random_seed(777)  # reproducibilityb
 p =argparse.ArgumentParser()
 #FOR TRAIN
 p.add_argument('--train_data', type=str, default="train_data_square_for_bi__prevent_overfitting2D_zigzag.csv")
-p.add_argument('--board_dir', type=str, default="./board/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/")
-p.add_argument('--save_dir', type=str, default="model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/")
+p.add_argument('--board_dir', type=str, default="./board/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/")
+p.add_argument('--save_dir', type=str, default="model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/")
 p.add_argument('--network_model', type=str, default="bi")
 
-p.add_argument('--lr', type=float, default = 0.012)
-p.add_argument('--decay_rate', type=float, default = 0.7)
-p.add_argument('--decay_step', type=int, default = 10)
-p.add_argument('--epoches', type=int, default = 25000)
+p.add_argument('--lr', type=float, default = 0.01)
+p.add_argument('--decay_rate', type=float, default = 0.66)
+p.add_argument('--decay_step', type=int, default = 3)
+p.add_argument('--epoches', type=int, default = 10000)
 p.add_argument('--batch_size', type=int, default = 802815)
-p.add_argument('--hidden_size', type=int, default = 2) # RNN output size
+p.add_argument('--hidden_size', type=int, default = 1000) # RNN output size
 p.add_argument('--input_size', type=int, default = 4) #RNN input size : number of uwb
 p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
 p.add_argument('--output_size', type=int, default = 2) #final output size (RNN or softmax, etc)

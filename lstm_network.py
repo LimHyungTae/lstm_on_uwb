@@ -23,6 +23,15 @@ class LSTM:
             # outputs : tuple
 
             return tf.nn.dynamic_rnn(cell, self.X_data, dtype=tf.float32)
+
+    def setStactedUnidirectionalLSTM(self):
+        with tf.variable_scope("Stacted lstm"):
+            cell = tf.contrib.rnn.BasicLSTMCell(num_units = self.hidden_size)
+
+            self.isbidirectional = 0
+            # outputs : tuple
+
+            return tf.nn.dynamic_rnn(cell, self.X_data, dtype=tf.float32)
     #
     # def setEncoderDecoderModel(self):
     #         encoder_cell = tf.nn.rnn_cell.BasicLSTMCell(num_units = self.hidden_size)
@@ -61,9 +70,9 @@ class LSTM:
     def setBidirectionalLSTM(self):
         with tf.variable_scope("bidirectional_lstm"):
             cell_forward = tf.contrib.rnn.BasicLSTMCell(num_units = self.hidden_size)
-            # cell_forward = tf.nn.rnn_cell.DropoutWrapper(cell_forward, output_keep_prob= 1.0)
+            #cell_forward = tf.nn.rnn_cell.DropoutWrapper(cell_forward, output_keep_prob= 0.7)
             cell_backward = tf.contrib.rnn.BasicLSTMCell(num_units = self.hidden_size)
-            # cell_backward = tf.nn.rnn_cell.DropoutWrapper(cell_backward, output_keep_prob= 1.0)
+            #cell_backward = tf.nn.rnn_cell.DropoutWrapper(cell_backward, output_keep_prob= 0.7)
 
             self.isbidirectional = 1
             # outputs : tuple
@@ -99,8 +108,8 @@ class LSTM:
             Y_pred = tf.contrib.layers.fully_connected(Y_pred, self.output_size, activation_fn=None)
 
             # Y_pred = tf.reshape(Y_pred, [batch_size, sequence_length, num_classes])
-            self.Y_pred = tf.reshape(Y_pred, [-1, self.sequence_length, self.output_size])
-            self.Y_pred =  self.Y_pred[:,-1,:] # batch, sequence_length, output_size -> batch, 1, output_size
+            self.Y_pred = tf.reshape(Y_pred, [self.batch_size, 1, self.output_size])
+            #self.Y_pred =  self.Y_pred[:,-1,:] # batch, sequence_length, output_size -> batch, 1, output_size
 
     def build_loss(self, lr, lr_decay_rate, lr_decay_step):
         self.init_lr = lr
