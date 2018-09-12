@@ -1,21 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1456954-bade-4c57-b3bf-dab6159f37c8" name="Default" comment="">
-<<<<<<< Updated upstream
-      <change afterPath="$PROJECT_DIR$/data_sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset_paser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lstm_following_lab12_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensorflow_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_bidirectional_rnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_lstm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_rnn_input_to_output.py" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/tensorflow_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
->>>>>>> Stashed changes
+    <list default="true" id="afb5eefb-b68a-41f8-89f2-fb88f74db4fc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Distance_error_result_LSTMs_stack_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Distance_error_result_LSTMs_stack_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Distance_error_result_LSTMs_stack_30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Distance_error_result_LSTMs_stack_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Distance_error_result_LSTMs_stack_50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Distance_error_result_LSTMs_stack_soft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/GRU/events.out.tfevents.1534135787.url-dlserver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/bi_debugging/events.out.tfevents.1534146734.url-dlserver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/bidirectional_LSTM/events.out.tfevents.1533892770.shapelim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/bidirectional_hidden1000/events.out.tfevents.1533891471.shapelim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/bidirectional_hidden1000/events.out.tfevents.1533891638.shapelim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/bidirectional_hidden1000/events.out.tfevents.1533891653.shapelim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/bidirectional_hidden1000/events.out.tfevents.1533891682.shapelim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/stack_bi_2/events.out.tfevents.1534258668.url-dlserver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/stacked_bi/events.out.tfevents.1534219402.url-dlserver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board/RiTA_wo_fcn/uni_w_many_dataset/events.out.tfevents.1534139958.url-dlserver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/horizontal zigzag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/test_data_diagonal_curve2D.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/just_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lstm_on_uwb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18602.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18602.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18602.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18603.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18603.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18603.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18604.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18604.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18604.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18605.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18605.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18605.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18606.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18606.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/GRU/model_0_00187-18606.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24996.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24996.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24997.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24997.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24998.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24998.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24999.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24999.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-25000.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-25000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5826.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5826.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5826.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5922.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5922.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5922.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5928.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5928.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5928.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5934.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5934.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5934.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5952.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5952.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stack_bi_2/model_0_00011-5952.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5604.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5604.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5604.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5874.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5874.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5874.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5880.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5880.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00011-5880.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00012-5244.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00012-5244.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00012-5244.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00012-5478.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00012-5478.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_1000_lr_0_02/model_0_00012-5478.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/FINALLOSS_RECORD.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-16806.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-16806.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-16806.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-16872.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-16872.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-16872.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17202.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17202.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17202.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17478.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17478.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17478.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17700.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17700.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17700.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24996.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24996.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24996.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24997.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24997.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24997.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24998.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24998.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24998.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24999.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24999.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-24999.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-25000.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-25000.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/uni_w_many_dataset/model_0_00040-25000.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numpy_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plot_train_path_to_paper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/Distance_error_result__test1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/Test_trajectory11_legend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/Trajectory_result_refined_bi_LSTM_is_trained_wrong_bc_i_didnt_add_but_concatnate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/bidirectional_wo_fcn_well_trained.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/gru.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/stack_bi.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/stack_bi_2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/stack_bi_epoch_3000.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/test_stack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/trilateration.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_2_curved_path/Distance_error_result__test1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_2_curved_path/Test_trajectory11_legend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_2_curved_path/bi_lstm_to_curve_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_2_curved_path/gru_to_curve_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_2_curved_path/stack_lstm_2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_2_curved_path/test_stack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_2_curved_path/trilateration.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/RiTA/test_2_curved_path/uni_lstm_to_curve_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertical zigzag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lstm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPreprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPreprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Distance_error_result.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstm_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/lstm_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19722.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19722.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19722.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19787.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19787.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19787.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19823.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19823.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19823.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19933.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19933.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19933.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19962.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19962.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM/model_0_02289-19962.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-21225.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-21225.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-21225.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-21827.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-21827.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-21827.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-22193.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-22193.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-22193.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-23123.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-23123.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-23123.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-24215.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-24215.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_02291-24215.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_43806-27.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_43806-27.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_43806-27.meta" beforeDir="false" afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-25000.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_44882-26.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_44882-26.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_44882-26.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_45986-25.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_45986-25.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_45986-25.meta" beforeDir="false" afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24996.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_47120-24.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_47120-24.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_47120-24.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_48285-23.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_48285-23.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_48285-23.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_61147-14.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_61147-14.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_61147-14.meta" beforeDir="false" afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24999.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_64260-12.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_64260-12.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_64260-12.meta" beforeDir="false" afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24998.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_67521-10.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_67521-10.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_67521-10.meta" beforeDir="false" afterPath="$PROJECT_DIR$/model/RiTA_wo_fcn/bi_LSTM_well_trained_by_big_dataset/model_0_00025-24997.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_70934-8.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_70934-8.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_70934-8.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_74515-6.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_74515-6.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting/model_0_74515-6.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-10000.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-10000.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-10000.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9996.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9996.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9996.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9997.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9997.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9997.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9998.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9998.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9998.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9999.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9999.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_02299-9999.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22023-2483.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22023-2483.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22023-2483.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22035-1527.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22035-1527.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22035-1527.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22050-1445.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22050-1445.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22050-1445.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22069-1341.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22069-1341.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22069-1341.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22072-1130.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22072-1130.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_22072-1130.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24901-167.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24901-167.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24901-167.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24944-166.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24944-166.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24944-166.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24956-165.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24956-165.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24956-165.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24969-164.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24969-164.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_24969-164.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_25001-161.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_25001-161.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RiTA_wo_fcn/bidirectional_LSTM_prevent_overfitting_1/model_0_25001-161.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/RiTA/bidirectional_wo_fcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/RiTA/result_bidirectional.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/result_bidirectional.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/RiTA/unidirectional_wo_fcn.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/RiTA/test_1_arbitrary_path/unidirectional_wo_fcn.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribble.py" beforeDir="false" afterPath="$PROJECT_DIR$/scribble.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trilateration.py" beforeDir="false" afterPath="$PROJECT_DIR$/trilateration.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,175 +267,105 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$py_plot.coverage" NAME="py_plot Coverage Results" MODIFIED="1529159289103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-<<<<<<< Updated upstream
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$test.coverage" NAME="test Coverage Results" MODIFIED="1529508110371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$lstm_following_lab12_2.coverage" NAME="lstm_following_lab12_2 Coverage Results" MODIFIED="1529508770904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$test_lstm.coverage" NAME="test_lstm Coverage Results" MODIFIED="1529506788395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$lstm.coverage" NAME="lstm Coverage Results" MODIFIED="1529420536015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$dataset_paser.coverage" NAME="dataset_paser Coverage Results" MODIFIED="1529436742023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$test_rnn.coverage" NAME="test_rnn Coverage Results" MODIFIED="1529446522079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-=======
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$test.coverage" NAME="test Coverage Results" MODIFIED="1529901687680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$lstm.coverage" NAME="lstm Coverage Results" MODIFIED="1529156528259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
->>>>>>> Stashed changes
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$tensorflow_test.coverage" NAME="tensorflow_test Coverage Results" MODIFIED="1529155009898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$make_test_dataset__1_.coverage" NAME="make_test_dataset (1) Coverage Results" MODIFIED="1529150271926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$make_test_dataset.coverage" NAME="make_test_dataset Coverage Results" MODIFIED="1529150261575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lstm_on_uwb$main.coverage" NAME="main Coverage Results" MODIFIED="1534302163792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lstm_on_uwb$scribble.coverage" NAME="scribble Coverage Results" MODIFIED="1536290848986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lstm_on_uwb$plot_result.coverage" NAME="plot_result Coverage Results" MODIFIED="1534380821347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lstm_on_uwb$numpy_test.coverage" NAME="numpy_test Coverage Results" MODIFIED="1534146647607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lstm_on_uwb$lstm_network.coverage" NAME="lstm_network Coverage Results" MODIFIED="1534182140354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lstm_on_uwb$trilateration.coverage" NAME="trilateration Coverage Results" MODIFIED="1534171282081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_bidirectional_rnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_bidirectional_rnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="391">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-=======
-            <state relative-caret-position="578">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
->>>>>>> Stashed changes
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lstm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lstm.py">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="102">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="425">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
->>>>>>> Stashed changes
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lstm_model.txt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lstm_model.txt.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="lstm_following_lab12_2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lstm_following_lab12_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-              <folding>
-                <element signature="e#32#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_lstm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_lstm.py">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-=======
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
->>>>>>> Stashed changes
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< Updated upstream
-      <file leaf-file-name="data_sample.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_sample.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-=======
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
->>>>>>> Stashed changes
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< Updated upstream
-      <file leaf-file-name="dataset_paser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataset_paser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-=======
-      <file leaf-file-name="lstm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lstm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tensorflow_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
->>>>>>> Stashed changes
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_rnn_input_to_output.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_rnn_input_to_output.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_for_test.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_for_test.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="tensorflow_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
+    <splitter split-orientation="horizontal" split-proportion="0.5613609">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="scribble.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scribble.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="495">
+                  <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="trilateration.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/trilateration.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#10#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="numpy_test.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/numpy_test.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="plot_result.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/plot_result.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="457">
+                  <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="740">
+                  <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="plot_result.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/plot_result.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="338">
+                  <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataPreprocessing.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DataPreprocessing.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="254">
+                  <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -201,23 +373,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lstm_model.txt.py" />
-        <option value="$PROJECT_DIR$/make_test_dataset.py" />
-        <option value="$PROJECT_DIR$/make_train_dataset.py" />
-        <option value="$PROJECT_DIR$/py_plot.py" />
-        <option value="$PROJECT_DIR$/tensorflow_test.py" />
-<<<<<<< Updated upstream
-        <option value="$PROJECT_DIR$/dataset_paser.py" />
-        <option value="$PROJECT_DIR$/lstm.py" />
-        <option value="$PROJECT_DIR$/data_samle.txt" />
-        <option value="$PROJECT_DIR$/test_rnn.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/test_rnn_input_to_output.py" />
-        <option value="$PROJECT_DIR$/lstm_following_lab12_2.py" />
-=======
-        <option value="$PROJECT_DIR$/lstm.py" />
-        <option value="$PROJECT_DIR$/test.py" />
->>>>>>> Stashed changes
+        <option value="$PROJECT_DIR$/numpy_test.py" />
+        <option value="$PROJECT_DIR$/trilateration.py" />
+        <option value="$PROJECT_DIR$/lstm_network.py" />
+        <option value="$PROJECT_DIR$/plot_result.py" />
+        <option value="$PROJECT_DIR$/scribble.py" />
+        <option value="$PROJECT_DIR$/DataPreprocessing.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -231,20 +393,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-<<<<<<< Updated upstream
-    <option name="x" value="1081" />
-    <option name="y" value="33" />
-    <option name="width" value="983" />
-    <option name="height" value="1056" />
-=======
-    <option name="x" value="785" />
-    <option name="y" value="79" />
-    <option name="width" value="982" />
-    <option name="height" value="1028" />
->>>>>>> Stashed changes
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <option name="x" value="1986" />
+    <option name="y" value="34" />
+    <option name="width" value="1393" />
+    <option name="height" value="1004" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -259,6 +411,11 @@
               <item name="lstm_on_uwb" type="b2602c69:ProjectViewProjectNode" />
               <item name="lstm_on_uwb" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lstm_on_uwb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lstm_on_uwb" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -267,15 +424,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/DeepLearningZeroToAll" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -289,9 +444,8 @@
       </list>
     </option>
   </component>
-<<<<<<< Updated upstream
-  <component name="RunManager" selected="Python.lstm_following_lab12_2">
-    <configuration name="dataset_paser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.scribble">
+    <configuration name="lstm_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lstm_on_uwb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,17 +458,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset_paser.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lstm_network.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="lstm_following_lab12_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-=======
-  <component name="RunManager" selected="Python.test">
-    <configuration name="lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
->>>>>>> Stashed changes
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lstm_on_uwb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -327,21 +477,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-<<<<<<< Updated upstream
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lstm_following_lab12_2.py" />
-=======
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lstm.py" />
->>>>>>> Stashed changes
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-<<<<<<< Updated upstream
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-=======
-    <configuration name="make_test_dataset (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
->>>>>>> Stashed changes
+    <configuration name="plot_result" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lstm_on_uwb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -354,17 +496,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-<<<<<<< Updated upstream
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_rnn_input_to_output.py" />
-=======
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/make_test_dataset.py" />
->>>>>>> Stashed changes
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_result.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test_lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="scribble" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lstm_on_uwb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -377,13 +515,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_lstm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scribble.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test_rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="trilateration" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lstm_on_uwb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -396,80 +534,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_bidirectional_rnn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="tensorflow_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="lstm_on_uwb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="lstm_on_uwb" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trilateration.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-<<<<<<< Updated upstream
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.dataset_paser" />
-      <item itemvalue="Python.test_rnn" />
-      <item itemvalue="Python.lstm_following_lab12_2" />
-      <item itemvalue="Python.test_lstm" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.plot_result" />
+      <item itemvalue="Python.trilateration" />
+      <item itemvalue="Python.scribble" />
+      <item itemvalue="Python.lstm_network" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lstm_following_lab12_2" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test_lstm" />
-        <item itemvalue="Python.test_rnn" />
-        <item itemvalue="Python.dataset_paser" />
-=======
-      <item itemvalue="Python.make_test_dataset (1)" />
-      <item itemvalue="Python.py_plot" />
-      <item itemvalue="Python.tensorflow_test" />
-      <item itemvalue="Python.lstm" />
-      <item itemvalue="Python.test" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.py_plot" />
-        <item itemvalue="Python.lstm" />
-        <item itemvalue="Python.tensorflow_test" />
-        <item itemvalue="Python.make_test_dataset (1)" />
->>>>>>> Stashed changes
+        <item itemvalue="Python.scribble" />
+        <item itemvalue="Python.plot_result" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.lstm_network" />
+        <item itemvalue="Python.trilateration" />
       </list>
     </recent_temporary>
   </component>
@@ -478,52 +562,41 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c1456954-bade-4c57-b3bf-dab6159f37c8" name="Default" comment="" />
-      <created>1529143040025</created>
+      <changelist id="afb5eefb-b68a-41f8-89f2-fb88f74db4fc" name="Default" comment="" />
+      <created>1534139619031</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1529143040025</updated>
+      <updated>1534139619031</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< Updated upstream
-    <frame x="1081" y="33" width="983" height="1056" extended-state="0" />
-=======
-    <frame x="358" y="82" width="982" height="1028" extended-state="0" />
->>>>>>> Stashed changes
+    <frame x="1986" y="34" width="1393" height="1004" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37658226" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-<<<<<<< Updated upstream
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1698881" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32991803" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42410713" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14860015" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.001017294" />
-=======
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36630434" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24949084" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.18431772" />
->>>>>>> Stashed changes
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.0014357502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38831967" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39959016" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Remote Host" order="5" weight="0.2592992" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991803" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,499 +607,218 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/make_train_dataset.py">
+    <entry file="file://$PROJECT_DIR$/scribble.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-<<<<<<< Updated upstream
-=======
+        <state relative-caret-position="480">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/make_test_dataset.py">
+    <entry file="file://$PROJECT_DIR$/trilateration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm_model.txt.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_for_test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
+    <entry file="file://$PROJECT_DIR$/numpy_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="105">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_plot.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="420">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/make_train_dataset.py">
+    <entry file="file://$PROJECT_DIR$/scribble.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
->>>>>>> Stashed changes
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trilateration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_bidirectional_rnn.py">
+    <entry file="file://$PROJECT_DIR$/numpy_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="105">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lstm.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_sample.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/dataset_paser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_rnn_input_to_output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-=======
-    <entry file="file://$PROJECT_DIR$/lstm_model.txt.py">
-      <provider selected="true" editor-type-id="text-editor" />
->>>>>>> Stashed changes
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_for_test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm_following_lab12_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding>
-            <element signature="e#32#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_train_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_test_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_plot.py">
+    <entry file="file://$PROJECT_DIR$/Test_trajectory_legend.png" />
+    <entry file="file://$PROJECT_DIR$/plot_result.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm_following_lab12_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_sample.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_paser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="46" column="77" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_rnn_input_to_output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_train_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-=======
-    <entry file="file://$PROJECT_DIR$/make_test_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_train_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
->>>>>>> Stashed changes
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/variables.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="425">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-=======
-        <state relative-caret-position="253">
-          <caret line="1574" column="4" selection-start-line="1574" selection-start-column="4" selection-end-line="1574" selection-end-column="4" />
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/training/adam.py">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="578">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-=======
-        <state relative-caret-position="459">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
->>>>>>> Stashed changes
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/make_test_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_train_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_test_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/variables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="1574" column="4" selection-start-line="1574" selection-start-column="4" selection-end-line="1574" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/training/adam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_test_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_train_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/py_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <caret line="17" column="90" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
->>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/tensorflow_test.py">
+    <entry file="file://$PROJECT_DIR$/Test_trajectory.png" />
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="435">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_bidirectional_rnn.py">
+    <entry file="file://$PROJECT_DIR$/trilateration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-=======
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
->>>>>>> Stashed changes
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
-<<<<<<< Updated upstream
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_for_test.txt">
+    <entry file="file://$PROJECT_DIR$/numpy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_dataset.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_sample.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_paser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/h5py/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstm_model.txt.py">
+    <entry file="file://$PROJECT_DIR$/test">
       <provider selected="true" editor-type-id="text-editor" />
-=======
->>>>>>> Stashed changes
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_lstm.py">
+    <entry file="file://$PROJECT_DIR$/make_dataset.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Distance_error_result_LSTMs_gru.png" />
+    <entry file="file://$PROJECT_DIR$/lstm_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="-855">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just_test.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trajectory_result_refined_interval_10_semifinal2.png" />
+    <entry file="file://$PROJECT_DIR$/numpy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_rnn_input_to_output.py">
+    <entry file="file://$PROJECT_DIR$/test_stack.png" />
+    <entry file="file://$PROJECT_DIR$/Test_trajectory.png" />
+    <entry file="file://$PROJECT_DIR$/Test_trajectory_legend.png" />
+    <entry file="file://$PROJECT_DIR$/plot_result.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="457">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lstm.py">
+    <entry file="file://$PROJECT_DIR$/scribble.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="495">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lstm_following_lab12_2.py">
+    <entry file="file://$PROJECT_DIR$/trilateration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="e#32#55#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
         </state>
       </provider>
     </entry>

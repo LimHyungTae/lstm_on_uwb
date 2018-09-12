@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="shapelim@143.248.122.59:22">
+  <component name="PublishConfigData" autoUpload="Always" serverName="shapelim@143.248.122.59:22" showExcludedInSync="true">
     <serverData>
       <paths name="shapelim@143.248.122.59:22">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/pycharm_project_265" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/shapelim/workspace/lstm_on_uwb" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

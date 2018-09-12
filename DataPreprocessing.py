@@ -15,39 +15,8 @@ class DataPreprocessing:
 
         self.scaler = MinMaxScaler()
         self.scaler_for_prediction = MinMaxScaler()
-    # def MinMaxScaler(self, data):
-    #     ''' Min Max Normalization
-    #
-    #     Parameters
-    #     ----------
-    #     data : numpy.ndarray
-    #         input data to be normalized
-    #         shape: [Batch size, dimension]
-    #
-    #     Returns
-    #     ----------
-    #     data : numpy.ndarry
-    #         normalized data
-    #         shape: [Batch size, dimension]
-    #
-    #     References
-    #     ----------
-    #     .. [1] http://sebastianraschka.com/Articles/2014_about_feature_scaling.html
-    #
-    #     '''
-    #     self.min_value = np.min(data,0)
-    #     # numerator = data - np.min(data, 0)
-    #     # denominator = np.max(data, 0) - np.min(data, 0)
-    #     numerator = data - self.min_value
-    #     self.denominator = np.max(data, 0) - np.min(data, 0)
-    #     # noise term prevents the zero division
-    #     return numerator / (self.denominator + 1e-7)
-    # def inverse_transform(self, data):
-    #
-    #     original_data = data*self.denominator + self.min_value
-    #
-    #     return original_data
-    def fit_data(self):
+
+    def fitDataForMinMaxScaler(self):
         xy = np.loadtxt(self.dir, delimiter=',')
         # if (not prediction):
         self.scaler.fit(xy)
@@ -78,7 +47,16 @@ class DataPreprocessing:
             Y_data.append(_y)
         X_data = np.array(X_data)
         Y_data = np.array(Y_data)
+
+        X_data, Y_data = self.suffle_array_in_the_same_order(X_data, Y_data)
+
         return X_data, Y_data
+    def suffle_array_in_the_same_order(self,x_data,y_data):
+        shuffle_index = np.arange(x_data.shape[0])
+        x_data = x_data[shuffle_index]
+        y_data = y_data[shuffle_index]
+
+        return x_data, y_data
     def set_test_data(self, isRaw = False):
         #set depends on sequence length
         #Just do MinMax Scaler to whole data
