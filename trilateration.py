@@ -57,11 +57,12 @@ class Trilateration:
 
         result_file.close()
 ####################
-input = 'inputs/test_data_arbitrary_square_uwb_2D_e10.csv'
-output_dir = 'results/RiTA/trilateration.csv'
+if __name__ == '__main__':
+    input = 'inputs/test_data_arbitrary_square_uwb_2D_e10.csv'
+    output_dir = 'results/RiTA/trilateration.csv'
 
-trilateration = Trilateration()
-trilateration.setInput(input)
-trilateration.setOutputDir(output_dir)
-trilateration.write_file_data2D()
+    trilateration = Trilateration()
+    trilateration.setInput(input)
+    trilateration.setOutputDir(output_dir)
+    trilateration.write_file_data2D()
 

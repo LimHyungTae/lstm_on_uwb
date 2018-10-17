@@ -10,8 +10,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/lstm_on_uwb$main.coverage" NAME="main Coverage Results" MODIFIED="1534302163792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lstm_on_uwb$scribble.coverage" NAME="scribble Coverage Results" MODIFIED="1536290848986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lstm_on_uwb$main.coverage" NAME="main Coverage Results" MODIFIED="1539760028416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lstm_on_uwb$plot_result.coverage" NAME="plot_result Coverage Results" MODIFIED="1534380821347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lstm_on_uwb$numpy_test.coverage" NAME="numpy_test Coverage Results" MODIFIED="1534146647607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lstm_on_uwb$lstm_network.coverage" NAME="lstm_network Coverage Results" MODIFIED="1534182140354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -72,7 +72,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="220" />
-    <option name="y" value="125" />
+    <option name="y" value="76" />
     <option name="width" value="1574" />
     <option name="height" value="1004" />
   </component>
@@ -122,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scribble">
+  <component name="RunManager" selected="Python.main">
     <configuration name="lstm_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lstm_on_uwb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -227,9 +227,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.scribble" />
         <item itemvalue="Python.plot_result" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.lstm_network" />
         <item itemvalue="Python.trilateration" />
       </list>

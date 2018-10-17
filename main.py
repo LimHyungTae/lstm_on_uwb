@@ -30,10 +30,10 @@ p.add_argument('--sequence_length', type=int, default = 5) # # of lstm rolling
 p.add_argument('--output_size', type=int, default = 2) #final output size (RNN or softmax, etc)
 #FOR TEST
 p.add_argument('--load_model_dir', type=str, default="model/RiTA_wo_fcn/stacked_bi_epoch_3000/model_0_00006-17700")
-p.add_argument('--test_data', type=str, default='inputs/test_data_diagonal_curve2D.csv')
+p.add_argument('--test_data', type=str, default='train_data_3D_zigzag.csv')
 p.add_argument('--output_results', type=str, default= 'results/RiTA/stack_lstm_epoch3000_17700.csv')
 ###########
-p.add_argument('--mode', type=str, default = "test") #train or test
+p.add_argument('--mode', type=str, default = "train") #train or test
 args = p.parse_args()
 
 
@@ -61,48 +61,54 @@ num_total_steps = args.epoches*iter
 LSTM.build_loss(args.lr, args.decay_rate, num_total_steps/args.decay_step)
 saver = tf.train.Saver(max_to_keep = 5)
 
+# COUNT PARAMS
+total_num_parameters = 0
+for variable in tf.trainable_variables():
+    total_num_parameters += np.array(variable.get_shape().as_list()).prod()
+print("number of trainable parameters: {}".format(total_num_parameters))
+
 # Use simple momentum for the optimization.
 ###########for using tensorboard########
 merged = tf.summary.merge_all()
 ########################################
-with tf.Session() as sess:
-    if (args.mode=='train'):
-
-        sess.run(tf.global_variables_initializer())
-
-        writer = tf.summary.FileWriter(args.board_dir, sess.graph)
-        step = 0
-        min_loss = 2
-        tqdm_range = trange(args.epoches, desc = 'Loss', leave = True)
-        for ii in tqdm_range:
-            loss_of_epoch = 0
-            for i in range(iter): #iter = int(len(X_data)/batch_size)
-                step = step + 1
-                idx = i* args.batch_size
-
-                l, _,gt, prediction, summary = sess.run([LSTM.loss, LSTM.train, LSTM.Y_data, LSTM.Y_pred, merged ],
-                                                        feed_dict={LSTM.X_data: X_data[idx : idx + args.batch_size], LSTM.Y_data: Y_data[idx : idx + args.batch_size]})
-                writer.add_summary(summary, step)
-                loss_of_epoch += l/args.batch_size
-            loss_of_epoch /=iter
-            if (loss_of_epoch < min_loss):
-                min_loss = loss_of_epoch
-                saver.save(sess, args.save_dir + 'model_'+'{0:.5f}'.format(loss_of_epoch).replace('.','_'), global_step=step)
-            tqdm_range.set_description('Loss ' +'{0:.7f}'.format(loss_of_epoch)+'  ')
-            tqdm_range.refresh()
-
-    elif (args.mode =='test'):
-   #For save diagonal data
-        saver.restore(sess, args.load_model_dir)
-   # tf.train.latest_checkpoint(
-
-        test_data = args.test_data
-        # diagonal_data = 'inputs/data_diagonal_w_big_error.csv'
-        data_parser.dir = test_data
-        X_test, Y_test = data_parser.set_data()
-        prediction = sess.run([LSTM.Y_pred], feed_dict={LSTM.X_data: X_test}) #prediction : type: list, [ [[[hidden_size]*sequence_length] ... ] ]
-
-        data_parser.write_file_data(args.output_results, prediction)
+# with tf.Session() as sess:
+#     if (args.mode=='train'):
+#
+#         sess.run(tf.global_variables_initializer())
+#
+#         writer = tf.summary.FileWriter(args.board_dir, sess.graph)
+#         step = 0
+#         min_loss = 2
+#         tqdm_range = trange(args.epoches, desc = 'Loss', leave = True)
+#         for ii in tqdm_range:
+#             loss_of_epoch = 0
+#             for i in range(iter): #iter = int(len(X_data)/batch_size)
+#                 step = step + 1
+#                 idx = i* args.batch_size
+#
+#                 l, _,gt, prediction, summary = sess.run([LSTM.loss, LSTM.train, LSTM.Y_data, LSTM.Y_pred, merged ],
+#                                                         feed_dict={LSTM.X_data: X_data[idx : idx + args.batch_size], LSTM.Y_data: Y_data[idx : idx + args.batch_size]})
+#                 writer.add_summary(summary, step)
+#                 loss_of_epoch += l/args.batch_size
+#             loss_of_epoch /=iter
+#             if (loss_of_epoch < min_loss):
+#                 min_loss = loss_of_epoch
+#                 saver.save(sess, args.save_dir + 'model_'+'{0:.5f}'.format(loss_of_epoch).replace('.','_'), global_step=step)
+#             tqdm_range.set_description('Loss ' +'{0:.7f}'.format(loss_of_epoch)+'  ')
+#             tqdm_range.refresh()
+#
+#     elif (args.mode =='test'):
+#    #For save diagonal data
+#         saver.restore(sess, args.load_model_dir)
+#    # tf.train.latest_checkpoint(
+#
+#         test_data = args.test_data
+#         # diagonal_data = 'inputs/data_diagonal_w_big_error.csv'
+#         data_parser.dir = test_data
+#         X_test, Y_test = data_parser.set_data()
+#         prediction = sess.run([LSTM.Y_pred], feed_dict={LSTM.X_data: X_test}) #prediction : type: list, [ [[[hidden_size]*sequence_length] ... ] ]
+#
+#         data_parser.write_file_data(args.output_results, prediction)
     #trilateration
 
         # trilateration = trilateration.Trilateration(diagonal_data, 'results/result_diagonal_w_trilateration.csv')

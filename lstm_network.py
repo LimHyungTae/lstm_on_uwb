@@ -139,7 +139,6 @@ class LSTM:
                 outputs, _states = self.setGRU()
                 print ("GRU")
 
-            # outputs = tf.contrib.layers.fully_connected(X_for_fc, 100, activation_fn=None)
             self.Y_pred = outputs[:,-1, :]
 
     def build_model_w_FCN(self):
